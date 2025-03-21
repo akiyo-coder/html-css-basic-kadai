@@ -1,0 +1,85 @@
+/* 一番上の図形へのスタイル適用 */
+#top {
+  width: 800px;
+  margin: 20px auto; /* 上下に20pxの余白を入れて、画面の中央に配置 */
+  background-color: #dcc9f4;
+  display: flex;
+  text-align: center; /* 中のp要素を中央揃えにする */
+  justify-content: center; /* 子要素を水平方向に中央配置 */
+  border-top: 1px solid #d3d3d3; /* 薄いグレーの上ボーダー */
+  border-bottom: 1px solid #d3d3d3; /* 薄いグレーの下ボーダー */
+}
+
+.top-child {
+  width: 20%; /* 親要素の20% */
+  background-color: #ffd9df;
+  display: inline-block; /* 横並びにする */
+  text-align: center; /* テキストを中央揃え */
+  margin: 10px 10px 10px 10px; /* 上下中央揃え用に上下マージン追加 */
+  box-sizing: border-box;
+}
+
+/* 真ん中の図形へのスタイル適用 */
+#middle {
+  width: 800px;
+  height: 800px;
+  margin: 20px auto; /* 上下に20pxの余白を入れて、画面の中央に配置 */
+  background-color: #ffd9df;
+  position: relative; /* 子要素の絶対配置の基準にする */
+}
+
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+}
+
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+/* 一番下の図形へのスタイル適用 */
+#bottom {
+  width: 800px;
+  height: 300px;
+  margin: 20px auto; /* 画面の中央に配置 */
+  background-color: #87ceeb;
+  position: relative; /* 子要素の配置の基準にする */
+}
+
+#bottom-child01,
+#bottom-child02,
+#bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+}
+
+#bottom-child01 {
+  position: relative;
+  left: 0;
+}
+
+#bottom-child02 {
+  position: relative;
+  left: 200px; /* 左から200pxずらす */
+}
+
+#bottom-child03 {
+  position: relative;
+  left: 400px; /* 左から400pxずらす */
+}
